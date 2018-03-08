@@ -1,0 +1,97 @@
+easy_admin:
+  entities:
+    Book:
+      class: App\Entity\Book
+      list:
+        title: book.title.list
+        sort: [title, ASC]
+        actions: ['show']
+        max_results: 100
+        fields:
+          - property: title
+            label: book.property.title
+          - property: subtitle
+            label: book.property.sub_title
+          - property: lastName
+            label: book.property.author
+          - property: role
+            label: book.property.publication_year
+      show:
+        title: book.title.show
+        fields:
+          - property: title
+            label: book.property.title
+          - property: subTitle
+            label: book.property.sub_title
+          - property: author
+            label: book.property.author
+          - property: publicationYear
+            label: book.property.publication_year
+      form:
+        fields:
+          - property: title
+            label: book.property.title
+          - property: subTitle
+            label: book.property.sub_title
+          - property: author
+            label: book.property.author
+          - property: publicationYear
+            label: book.property.publication_year
+          - property: condition
+            label: book.property.condition
+          - property: volume
+            label: book.property.volume
+          - property: publishingHouse
+            label: book.property.publishing_house
+          - property: collection
+            label: book.property.collection
+          - property: numberOfPages
+            label: book.property.number_of_pages
+          - property: format
+            label: book.property.format
+          - property: location
+            label: book.property.location
+          - property: theme
+            label: book.property.theme
+          - property: type
+            label: book.property.type
+          - property: firstKeyword
+            label: book.property.first_keyword
+          - property: secondKeyword
+            label: book.property.second_keyword
+          - property: thirdKeyword
+            label: book.property.third_keyword
+          - property: fourthKeyword
+            label: book.property.fourth_keyword
+          - property: fifthKeyword
+            label: book.property.fifth_keyword
+          - property: sixthKeyword
+            label: book.property.sixth_keyword
+          - property: seventhKeyword
+            label: book.property.seventh_keyword
+          - property: eighthKeyword
+            label: book.property.eighth_keyword
+          - property: buyingYear
+            label: book.property.buying_year
+          - property: buyingPlace
+            label: book.property.buying_place
+          - property: buyingPrice
+            label: book.property.buying_price
+          - property: buyingComment
+            label: book.property.buying_comment
+          - property: firstPersonalizedField
+            label: book.property.first_personalized_field
+          - property: secondPersonalizedField
+            label: book.property.second_personalized_field
+          - property: thirdPersonalizedField
+            label: book.property.third_personalized_field
+          - property: fourthPersonalizedField
+            label: book.property.fourth_personalized_field
+          - property: comment
+            label: book.property.comment
+          - property: database
+            label: book.property.database
+      new:
+        title: book.title.new
+      edit:
+        title: book.title.edit

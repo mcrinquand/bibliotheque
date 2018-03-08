@@ -1,0 +1,38 @@
+menu:
+  book: Livre
+
+book:
+  title:
+    list: Liste des livres
+    new: Créer un livre
+  property:
+    title: Titre
+    sub_title: Sous titre
+    author: Auteur
+    condition: Etat
+    volume: Volume
+    publishing_house: Maison d'édition
+    collection: Collection
+    number_of_pages: Nombre de pages
+    format: Format
+    location: Emplacement
+    theme: Thème
+    type: Type
+    first_keyword: Mot clef 1
+    second_keyword: Mot clef 2
+    third_keyword: Mot clef 3
+    fourth_keyword: Mot clef 4
+    fifth_keyword: Mot clef 5
+    sixth_keyword: Mot clef 6
+    seventh_keyword: Mot clef 7
+    eighth_keyword: Mot clef 8
+    buying_year: Année d'achat
+    buying_place: Endroit d'achat
+    buying_price: Prix d'achat
+    buying_comment: Commentaire
+    first_personalized_field: Champ personnalisé 1
+    second_personalized_field: Champ personnalisé 2
+    third_personalized_field: Champ personnalisé 3
+    fourth_personalized_field: Champ personnalisé 4
+    comment: Commentaire
+    database: Base de données
