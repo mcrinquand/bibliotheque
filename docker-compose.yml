@@ -1,0 +1,32 @@
+version: '2'
+
+services:
+  apache:
+    container_name: biblio-apache
+    environment:
+      HTTPD_DOCROOT: public
+    image: gitlab.prestaconcept.net:7443/docker/apache-php:7.1
+    ports:
+      - "80:80"
+      - "1081:8080"
+    volumes:
+      - .:/src
+    working_dir: /src
+    hostname: apache
+    links:
+      - mysql:mysql
+    extends:
+        file: ~/.led/docker-base.yaml
+        service: localuser
+  mysql:
+    container_name: biblio-mysql
+    image: gitlab.prestaconcept.net:7443/docker/mysql:5.6
+    ports:
+      - "3306:3306"
+    hostname: mysql
+    volumes:
+      - ./.led/storage/mysql:/home/data
+      - ./.led/storage/dump:/dump
+    extends:
+        file: ~/.led/docker-base.yaml
+        service: localuser
