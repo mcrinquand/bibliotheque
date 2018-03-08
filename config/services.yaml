@@ -1,7 +1,7 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
-    locale: 'en'
+    locale: 'fr'
 
 services:
     # default configuration for services in *this* file
@@ -24,5 +24,14 @@ services:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
-    # add more service definitions when explicit configuration is needed
-    # please note that last definitions always *replace* previous ones
+    # normalizers and serializer specially done for the fixtures files
+    App\Fixtures\Normalizer\:
+        resource: '../src/Fixtures/Normalizer'
+        autoconfigure: false
+        tags: ['fixtures.normalizer']
+
+    App\Fixtures\Normalizer\Serializer:
+        public: false
+        autoconfigure: false
+        arguments:
+            $normalizers: !tagged fixtures.normalizer
