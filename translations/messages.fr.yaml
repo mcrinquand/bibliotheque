@@ -11,7 +11,11 @@ book:
     author: Auteur
     condition: Etat
     volume: Volume
+    volume_number: Volume
+    rate: Cote
+    isbn: ISBN
     publishing_house: Maison d'édition
+    publication_year: Année de publication
     collection: Collection
     number_of_pages: Nombre de pages
     format: Format

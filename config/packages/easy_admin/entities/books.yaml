@@ -41,6 +41,12 @@ easy_admin:
             label: book.property.condition
           - property: volume
             label: book.property.volume
+          - property: volumeNumber
+            label: book.property.volume_number
+          - property: rate
+            label: book.property.rate
+          - property: isbn
+            label: book.property.isbn
           - property: publishingHouse
             label: book.property.publishing_house
           - property: collection
@@ -77,8 +83,6 @@ easy_admin:
             label: book.property.buying_place
           - property: buyingPrice
             label: book.property.buying_price
-          - property: buyingComment
-            label: book.property.buying_comment
           - property: firstPersonalizedField
             label: book.property.first_personalized_field
           - property: secondPersonalizedField

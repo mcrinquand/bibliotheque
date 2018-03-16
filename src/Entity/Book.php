@@ -28,204 +28,274 @@ class Book
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $subTitle;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $author;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string", length=100, nullable=true, name="condition_info")
      */
     private $condition;
 
     /**
      * @var int|null
      *
-     * @ORM\Column(type="integer", length=4)
+     * @ORM\Column(type="integer", length=4, nullable=true)
      */
     private $volume;
 
     /**
      * @var int|null
      *
-     * @ORM\Column(type="integer", length=4)
+     * @ORM\Column(type="integer", length=4, nullable=true)
+     */
+    private $volumeNumber;
+
+    /**
+     * @var string|null
+     *
+     * @ORM\Column(type="string", length=100, nullable=true)
+     */
+    private $isbn;
+
+    /**
+     * @var int|null
+     *
+     * @ORM\Column(type="integer", length=4, nullable=true)
      */
     private $publicationYear;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $publishingHouse;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $collection;
 
     /**
      * @var int|null
      *
-     * @ORM\Column(type="integer", length=6)
+     * @ORM\Column(type="integer", length=6, nullable=true)
      */
     private $numberOfPages;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $format;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=5)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $location;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=20)
+     * @ORM\Column(type="string", length=100, nullable=true)
+     */
+    private $secondLocation;
+
+    /**
+     * @var string|null
+     *
+     * @ORM\Column(type="string", length=100, nullable=true)
+     */
+    private $thirdLocation;
+
+    /**
+     * @var string|null
+     *
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $theme;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=20)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $type;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=10)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $firstKeyWord;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=10)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $secondKeyWord;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=10)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $thirdKeyWord;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=10)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $fourthKeyWord;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=10)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $fifthKeyWord;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=10)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $sixthKeyWord;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=10)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $seventhKeyWord;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=10)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $eighthKeyWord;
 
     /**
      * @var int|null
      *
-     * @ORM\Column(type="integer", length=4)
+     * @ORM\Column(type="integer", length=4, nullable=true)
      */
     private $buyingYear;
 
     /**
      * @var int|null
      *
-     * @ORM\Column(type="integer", length=10)
+     * @ORM\Column(type="integer", length=10, nullable=true)
      */
     private $buyingPrice;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=50, nullable=true)
      */
     private $buyingPlace;
+
+    /**
+     * @var string|null
+     *
+     * @ORM\Column(type="string", length=50, nullable=true)
+     */
+    private $originalLanguage;
+
+    /**
+     * @var string|null
+     *
+     * @ORM\Column(type="string", length=50, nullable=true)
+     */
+    private $originalCountry;
+
+    /**
+     * @var string|null
+     *
+     * @ORM\Column(type="string", length=50, nullable=true)
+     */
+    private $originalTitle;
+
+    /**
+     * @var string|null
+     *
+     * @ORM\Column(type="string", length=50, nullable=true)
+     */
+    private $translator;
+
+    /**
+     * @var int|null
+     *
+     * @ORM\Column(type="integer", length=4, nullable=true)
+     */
+    private $firstPublicationYear;
+
+    /**
+     * @var string|null
+     *
+     * @ORM\Column(type="string", length=50, nullable=true)
+     */
+    private $firstPublishingHouse;
 
     /**
      * @var string
      *
      *
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
-    private $buyingComment;
+    private $rate;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $firstPersonalizedField;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $secondPersonalizedField;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $thirdPersonalizedField;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $fourthPersonalizedField;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="text", nullable=true)
      */
     private $comment;
 
@@ -328,6 +398,22 @@ class Book
     /**
      * @return int|null
      */
+    public function getVolumeNumber(): ?int
+    {
+        return $this->volumeNumber;
+    }
+
+    /**
+     * @param int $volumeNumber
+     */
+    public function setVolumeNumber(int $volumeNumber)
+    {
+        $this->volumeNumber = $volumeNumber;
+    }
+
+    /**
+     * @return int|null
+     */
     public function getPublicationYear(): ?int
     {
         return $this->publicationYear;
@@ -419,6 +505,38 @@ class Book
     public function setLocation(string $location)
     {
         $this->location = $location;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getSecondLocation(): ?string
+    {
+        return $this->secondLocation;
+    }
+
+    /**
+     * @param null|string $secondLocation
+     */
+    public function setSecondLocation(string $secondLocation)
+    {
+        $this->secondLocation = $secondLocation;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getThirdLocation(): ?string
+    {
+        return $this->thirdLocation;
+    }
+
+    /**
+     * @param null|string $thirdLocation
+     */
+    public function setThirdLocation(string $thirdLocation)
+    {
+        $this->thirdLocation = $thirdLocation;
     }
 
     /**
@@ -630,19 +748,131 @@ class Book
     }
 
     /**
-     * @return string|null
+     * @return null|string
      */
-    public function getBuyingComment(): ?string
+    public function getOriginalLanguage(): ?string
     {
-        return $this->buyingComment;
+        return $this->originalLanguage;
     }
 
     /**
-     * @param string $buyingComment
+     * @param string $originalLanguage
      */
-    public function setBuyingComment(string $buyingComment)
+    public function setOriginalLanguage(string $originalLanguage)
     {
-        $this->buyingComment = $buyingComment;
+        $this->originalLanguage = $originalLanguage;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getOriginalCountry(): ?string
+    {
+        return $this->originalCountry;
+    }
+
+    /**
+     * @param string $originalCountry
+     */
+    public function setOriginalCountry(string $originalCountry)
+    {
+        $this->originalCountry = $originalCountry;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getOriginalTitle(): ?string
+    {
+        return $this->originalTitle;
+    }
+
+    /**
+     * @param string $originalTitle
+     */
+    public function setOriginalTitle(string $originalTitle)
+    {
+        $this->originalTitle = $originalTitle;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getTranslator(): ?string
+    {
+        return $this->translator;
+    }
+
+    /**
+     * @param string $translator
+     */
+    public function setTranslator(string $translator)
+    {
+        $this->translator = $translator;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getFirstPublicationYear(): ?int
+    {
+        return $this->firstPublicationYear;
+    }
+
+    /**
+     * @param int $firstPublicationYear
+     */
+    public function setFirstPublicationYear(int $firstPublicationYear)
+    {
+        $this->firstPublicationYear = $firstPublicationYear;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getFirstPublishingHouse(): ?string
+    {
+        return $this->firstPublishingHouse;
+    }
+
+    /**
+     * @param string $firstPublishingHouse
+     */
+    public function setFirstPublishingHouse(string $firstPublishingHouse)
+    {
+        $this->firstPublishingHouse = $firstPublishingHouse;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getRate(): ?string
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param string $rate
+     */
+    public function setRate(string $rate)
+    {
+        $this->rate = $rate;
+    }
+
+    /**
+     * @return string
+     */
+    public function getIsbn(): ?string
+    {
+        return $this->isbn;
+    }
+
+    /**
+     * @param string $isbn
+     */
+    public function setIsbn(string $isbn)
+    {
+        $this->isbn = $isbn;
     }
 
     /**
