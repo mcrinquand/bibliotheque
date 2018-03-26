@@ -2,165 +2,203 @@
 
 {% block entity_form %}
     {{ form_start(form) }}
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.title) }}
+    <div class="content">
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title">Onglet 1</h3>
+
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                </div>
             </div>
-            <div class="col-sm-6">
-                {{ form_row(form.subTitle) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.author) }}
-            </div>
-            <div class="col-sm-3">
-                {{ form_row(form.volume) }}
-            </div>
-            <div class="col-sm-3">
-                {{ form_row(form.volumeNumber) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.rate) }}
-            </div>
-            <div class="col-sm-6">
-                {{ form_row(form.isbn) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                {{ form_row(form.publicationYear) }}
-            </div>
-            <div class="col-sm-4">
-                {{ form_row(form.publishingHouse) }}
-            </div>
-            <div class="col-sm-4">
-                {{ form_row(form.collection) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                {{ form_row(form.numberOfPages) }}
-            </div>
-            <div class="col-sm-4">
-                {{ form_row(form.format) }}
-            </div>
-            <div class="col-sm-4">
-                {{ form_row(form.condition) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                {{ form_row(form.comment) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.location) }}
-            </div>
-            <div class="col-sm-6">
-                {{ form_row(form.secondLocation) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.thirdLocation) }}
-            </div>
-            <div class="col-sm-6">
+            <!-- /.box-header -->
+            <div class="box-body" style="">
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.title) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.subTitle) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.author) }}
+                    </div>
+                    <div class="col-sm-3">
+                        {{ form_row(form.volume) }}
+                    </div>
+                    <div class="col-sm-3">
+                        {{ form_row(form.volumeNumber) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.rate) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.isbn) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        {{ form_row(form.publicationYear) }}
+                    </div>
+                    <div class="col-sm-4">
+                        {{ form_row(form.publishingHouse) }}
+                    </div>
+                    <div class="col-sm-4">
+                        {{ form_row(form.collection) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        {{ form_row(form.numberOfPages) }}
+                    </div>
+                    <div class="col-sm-4">
+                        {{ form_row(form.format) }}
+                    </div>
+                    <div class="col-sm-4">
+                        {{ form_row(form.condition) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        {{ form_row(form.comment) }}
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.theme) }}
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title">Onglet 2</h3>
+
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                </div>
             </div>
-            <div class="col-sm-6">
-                {{ form_row(form.type) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.firstKeyword) }}
-            </div>
-            <div class="col-sm-6">
-                {{ form_row(form.secondKeyword) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.thirdKeyword) }}
-            </div>
-            <div class="col-sm-6">
-                {{ form_row(form.fourthKeyword) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.fifthKeyword) }}
-            </div>
-            <div class="col-sm-6">
-                {{ form_row(form.sixthKeyword) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.seventhKeyword) }}
-            </div>
-            <div class="col-sm-6">
-                {{ form_row(form.eighthKeyword) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                {{ form_row(form.buyingYear) }}
-            </div>
-            <div class="col-sm-4">
-                {{ form_row(form.buyingPrice) }}
-            </div>
-            <div class="col-sm-4">
-                {{ form_row(form.buyingPlace) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.originalTitle) }}
-            </div>
-            <div class="col-sm-6">
-                {{ form_row(form.originalLanguage) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.originalCountry) }}
-            </div>
-            <div class="col-sm-6">
-                {{ form_row(form.translator) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.firstPublicationYear) }}
-            </div>
-            <div class="col-sm-6">
-                {{ form_row(form.firstPublishingHouse) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.firstPersonalizedField) }}
-            </div>
-            <div class="col-sm-6">
-                {{ form_row(form.secondPersonalizedField) }}
+            <!-- /.box-header -->
+            <div class="box-body" style="">
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.location) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.secondLocation) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.thirdLocation) }}
+                    </div>
+                    <div class="col-sm-6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.theme) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.type) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.firstKeyword) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.secondKeyword) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.thirdKeyword) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.fourthKeyword) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.fifthKeyword) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.sixthKeyword) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.seventhKeyword) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.eighthKeyword) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        {{ form_row(form.buyingYear) }}
+                    </div>
+                    <div class="col-sm-4">
+                        {{ form_row(form.buyingPrice) }}
+                    </div>
+                    <div class="col-sm-4">
+                        {{ form_row(form.buyingPlace) }}
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ form_row(form.thirdPersonalizedField) }}
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title">Onglet 3</h3>
+
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                </div>
             </div>
-            <div class="col-sm-6">
-                {{ form_row(form.fourthPersonalizedField) }}
+            <!-- /.box-header -->
+            <div class="box-body" style="">
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.originalTitle) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.originalLanguage) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.originalCountry) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.translator) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.firstPublicationYear) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.firstPublishingHouse) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.firstPersonalizedField) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.secondPersonalizedField) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.thirdPersonalizedField) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.fourthPersonalizedField) }}
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     {{ form_end(form) }}
 {% endblock %}
