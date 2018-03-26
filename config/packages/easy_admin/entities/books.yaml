@@ -2,10 +2,11 @@ easy_admin:
   entities:
     Book:
       class: App\Entity\Book
+      templates:
+        edit: 'backend/book/edit.html.twig'
       list:
         title: book.title.list
         sort: [title, ASC]
-        actions: ['show']
         max_results: 100
         fields:
           - property: title
@@ -55,8 +56,14 @@ easy_admin:
             label: book.property.number_of_pages
           - property: format
             label: book.property.format
+          - property: condition
+            label: book.property.condition
           - property: location
             label: book.property.location
+          - property: secondLocation
+            label: book.property.second_location
+          - property: thirdLocation
+            label: book.property.third_location
           - property: theme
             label: book.property.theme
           - property: type
@@ -83,6 +90,26 @@ easy_admin:
             label: book.property.buying_place
           - property: buyingPrice
             label: book.property.buying_price
+          - property: firstPersonalizedField
+            label: book.property.first_personalized_field
+          - property: secondPersonalizedField
+            label: book.property.second_personalized_field
+          - property: thirdPersonalizedField
+            label: book.property.third_personalized_field
+          - property: fourthPersonalizedField
+            label: book.property.fourth_personalized_field
+          - property: originalLanguage
+            label: book.property.original_language
+          - property: originalCountry
+            label: book.property.original_country
+          - property: originalTitle
+            label: book.property.original_title
+          - property: translator
+            label: book.property.translator
+          - property: firstPublishingHouse
+            label: book.property.first_publishing_house
+          - property: firstPublicationYear
+            label: book.property.first_publication_year
           - property: firstPersonalizedField
             label: book.property.first_personalized_field
           - property: secondPersonalizedField

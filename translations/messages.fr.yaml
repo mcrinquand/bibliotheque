@@ -5,13 +5,14 @@ book:
   title:
     list: Liste des livres
     new: Créer un livre
+    edit: Editer un livre
   property:
     title: Titre
     sub_title: Sous titre
     author: Auteur
     condition: Etat
-    volume: Volume
-    volume_number: Volume
+    volume: Tome
+    volume_number: Nombre de tome
     rate: Cote
     isbn: ISBN
     publishing_house: Maison d'édition
@@ -20,6 +21,8 @@ book:
     number_of_pages: Nombre de pages
     format: Format
     location: Emplacement
+    second_location: Emplacement 2
+    third_location: Emplacement 3
     theme: Thème
     type: Type
     first_keyword: Mot clef 1
@@ -38,5 +41,11 @@ book:
     second_personalized_field: Champ personnalisé 2
     third_personalized_field: Champ personnalisé 3
     fourth_personalized_field: Champ personnalisé 4
+    original_title: Titre original
+    original_language: Langue originale
+    original_country: Pays d'origine
+    translator: Traducteur
+    first_publication_year: Année de première publication
+    first_publishing_house: Première maison d'édition
     comment: Commentaire
     database: Base de données
