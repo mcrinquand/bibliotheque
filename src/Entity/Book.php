@@ -340,9 +340,9 @@ class Book
     }
 
     /**
-     * @param string $subTitle
+     * @param null|string $subTitle
      */
-    public function setSubTitle(string $subTitle)
+    public function setSubTitle(?string $subTitle)
     {
         $this->subTitle = $subTitle;
     }
@@ -356,7 +356,7 @@ class Book
     }
 
     /**
-     * @param string $author
+     * @param null|string $author
      */
     public function setAuthor($author)
     {
@@ -372,9 +372,9 @@ class Book
     }
 
     /**
-     * @param string $condition
+     * @param null|string $condition
      */
-    public function setCondition(string $condition)
+    public function setCondition(?string $condition)
     {
         $this->condition = $condition;
     }
@@ -436,9 +436,9 @@ class Book
     }
 
     /**
-     * @param string $publishingHouse
+     * @param null|string $publishingHouse
      */
-    public function setPublishingHouse(string $publishingHouse)
+    public function setPublishingHouse(?string $publishingHouse)
     {
         $this->publishingHouse = $publishingHouse;
     }
@@ -452,9 +452,9 @@ class Book
     }
 
     /**
-     * @param string $collection
+     * @param null|string|null $collection
      */
-    public function setCollection(string $collection)
+    public function setCollection(?string $collection)
     {
         $this->collection = $collection;
     }
@@ -484,9 +484,9 @@ class Book
     }
 
     /**
-     * @param string $format
+     * @param null|string $format
      */
-    public function setFormat(string $format)
+    public function setFormat(?string $format)
     {
         $this->format = $format;
     }
@@ -500,9 +500,9 @@ class Book
     }
 
     /**
-     * @param string $location
+     * @param null|string $location
      */
-    public function setLocation(string $location)
+    public function setLocation(?string $location)
     {
         $this->location = $location;
     }
@@ -518,7 +518,7 @@ class Book
     /**
      * @param null|string $secondLocation
      */
-    public function setSecondLocation(string $secondLocation)
+    public function setSecondLocation(?string $secondLocation)
     {
         $this->secondLocation = $secondLocation;
     }
@@ -534,7 +534,7 @@ class Book
     /**
      * @param null|string $thirdLocation
      */
-    public function setThirdLocation(string $thirdLocation)
+    public function setThirdLocation(?string $thirdLocation)
     {
         $this->thirdLocation = $thirdLocation;
     }
@@ -548,9 +548,9 @@ class Book
     }
 
     /**
-     * @param string $theme
+     * @param null|string $theme
      */
-    public function setTheme(string $theme)
+    public function setTheme(?string $theme)
     {
         $this->theme = $theme;
     }
@@ -564,9 +564,9 @@ class Book
     }
 
     /**
-     * @param string $type
+     * @param null|string $type
      */
-    public function setType(string $type)
+    public function setType(?string $type)
     {
         $this->type = $type;
     }
@@ -580,9 +580,9 @@ class Book
     }
 
     /**
-     * @param string $firstKeyWord
+     * @param null|string $firstKeyWord
      */
-    public function setFirstKeyWord(string $firstKeyWord)
+    public function setFirstKeyWord(?string $firstKeyWord)
     {
         $this->firstKeyWord = $firstKeyWord;
     }
@@ -596,9 +596,9 @@ class Book
     }
 
     /**
-     * @param string $secondKeyWord
+     * @param null|string $secondKeyWord
      */
-    public function setSecondKeyWord(string $secondKeyWord)
+    public function setSecondKeyWord(?string $secondKeyWord)
     {
         $this->secondKeyWord = $secondKeyWord;
     }
@@ -612,9 +612,9 @@ class Book
     }
 
     /**
-     * @param string $thirdKeyWord
+     * @param null|string $thirdKeyWord
      */
-    public function setThirdKeyWord(string $thirdKeyWord)
+    public function setThirdKeyWord(?string $thirdKeyWord)
     {
         $this->thirdKeyWord = $thirdKeyWord;
     }
@@ -628,9 +628,9 @@ class Book
     }
 
     /**
-     * @param string $fourthKeyWord
+     * @param null|string $fourthKeyWord
      */
-    public function setFourthKeyWord(string $fourthKeyWord)
+    public function setFourthKeyWord(?string $fourthKeyWord)
     {
         $this->fourthKeyWord = $fourthKeyWord;
     }
@@ -644,9 +644,9 @@ class Book
     }
 
     /**
-     * @param string $fifthKeyWord
+     * @param null|string $fifthKeyWord
      */
-    public function setFifthKeyWord(string $fifthKeyWord)
+    public function setFifthKeyWord(?string $fifthKeyWord)
     {
         $this->fifthKeyWord = $fifthKeyWord;
     }
@@ -660,9 +660,9 @@ class Book
     }
 
     /**
-     * @param string $sixthKeyWord
+     * @param null|string $sixthKeyWord
      */
-    public function setSixthKeyWord(string $sixthKeyWord)
+    public function setSixthKeyWord(?string $sixthKeyWord)
     {
         $this->sixthKeyWord = $sixthKeyWord;
     }
@@ -676,9 +676,9 @@ class Book
     }
 
     /**
-     * @param string $seventhKeyWord
+     * @param null|string $seventhKeyWord
      */
-    public function setSeventhKeyWord(string $seventhKeyWord)
+    public function setSeventhKeyWord(?string $seventhKeyWord)
     {
         $this->seventhKeyWord = $seventhKeyWord;
     }
@@ -692,9 +692,9 @@ class Book
     }
 
     /**
-     * @param string $eighthKeyWord
+     * @param null|string $eighthKeyWord
      */
-    public function setEighthKeyWord(string $eighthKeyWord)
+    public function setEighthKeyWord(?string $eighthKeyWord)
     {
         $this->eighthKeyWord = $eighthKeyWord;
     }
@@ -740,9 +740,9 @@ class Book
     }
 
     /**
-     * @param string $buyingPlace
+     * @param null|string $buyingPlace
      */
-    public function setBuyingPlace(string $buyingPlace)
+    public function setBuyingPlace(?string $buyingPlace)
     {
         $this->buyingPlace = $buyingPlace;
     }
@@ -756,9 +756,9 @@ class Book
     }
 
     /**
-     * @param string $originalLanguage
+     * @param null|string $originalLanguage
      */
-    public function setOriginalLanguage(string $originalLanguage)
+    public function setOriginalLanguage(?string $originalLanguage)
     {
         $this->originalLanguage = $originalLanguage;
     }
@@ -772,9 +772,9 @@ class Book
     }
 
     /**
-     * @param string $originalCountry
+     * @param null|string $originalCountry
      */
-    public function setOriginalCountry(string $originalCountry)
+    public function setOriginalCountry(?string $originalCountry)
     {
         $this->originalCountry = $originalCountry;
     }
@@ -788,9 +788,9 @@ class Book
     }
 
     /**
-     * @param string $originalTitle
+     * @param null|string $originalTitle
      */
-    public function setOriginalTitle(string $originalTitle)
+    public function setOriginalTitle(?string $originalTitle)
     {
         $this->originalTitle = $originalTitle;
     }
@@ -804,9 +804,9 @@ class Book
     }
 
     /**
-     * @param string $translator
+     * @param null|string $translator
      */
-    public function setTranslator(string $translator)
+    public function setTranslator(?string $translator)
     {
         $this->translator = $translator;
     }
@@ -836,9 +836,9 @@ class Book
     }
 
     /**
-     * @param string $firstPublishingHouse
+     * @param null|string $firstPublishingHouse
      */
-    public function setFirstPublishingHouse(string $firstPublishingHouse)
+    public function setFirstPublishingHouse(?string $firstPublishingHouse)
     {
         $this->firstPublishingHouse = $firstPublishingHouse;
     }
@@ -852,9 +852,9 @@ class Book
     }
 
     /**
-     * @param string $rate
+     * @param null|string $rate
      */
-    public function setRate(string $rate)
+    public function setRate(?string $rate)
     {
         $this->rate = $rate;
     }
@@ -868,9 +868,9 @@ class Book
     }
 
     /**
-     * @param string $isbn
+     * @param null|string $isbn
      */
-    public function setIsbn(string $isbn)
+    public function setIsbn(?string $isbn)
     {
         $this->isbn = $isbn;
     }
@@ -884,9 +884,9 @@ class Book
     }
 
     /**
-     * @param string $firstPersonalizedField
+     * @param null|string $firstPersonalizedField
      */
-    public function setFirstPersonalizedField(string $firstPersonalizedField)
+    public function setFirstPersonalizedField(?string $firstPersonalizedField)
     {
         $this->firstPersonalizedField = $firstPersonalizedField;
     }
@@ -900,9 +900,9 @@ class Book
     }
 
     /**
-     * @param string $secondPersonalizedField
+     * @param null|string $secondPersonalizedField
      */
-    public function setSecondPersonalizedField(string $secondPersonalizedField)
+    public function setSecondPersonalizedField(?string $secondPersonalizedField)
     {
         $this->secondPersonalizedField = $secondPersonalizedField;
     }
@@ -916,9 +916,9 @@ class Book
     }
 
     /**
-     * @param string $thirdPersonalizedField
+     * @param null|string $thirdPersonalizedField
      */
-    public function setThirdPersonalizedField(string $thirdPersonalizedField)
+    public function setThirdPersonalizedField(?string $thirdPersonalizedField)
     {
         $this->thirdPersonalizedField = $thirdPersonalizedField;
     }
@@ -932,9 +932,9 @@ class Book
     }
 
     /**
-     * @param string $fourthPersonalizedField
+     * @param null|string $fourthPersonalizedField
      */
-    public function setFourthPersonalizedField(string $fourthPersonalizedField)
+    public function setFourthPersonalizedField(?string $fourthPersonalizedField)
     {
         $this->fourthPersonalizedField = $fourthPersonalizedField;
     }
@@ -948,9 +948,9 @@ class Book
     }
 
     /**
-     * @param string $comment
+     * @param null|string $comment
      */
-    public function setComment(string $comment)
+    public function setComment(?string $comment)
     {
         $this->comment = $comment;
     }

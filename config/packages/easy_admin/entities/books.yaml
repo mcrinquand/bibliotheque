@@ -13,10 +13,11 @@ easy_admin:
             label: book.property.title
           - property: subtitle
             label: book.property.sub_title
-          - property: lastName
+          - property: author
             label: book.property.author
-          - property: role
+          - property: publicationYear
             label: book.property.publication_year
+            type: text
       show:
         title: book.title.show
         fields:
@@ -70,20 +71,28 @@ easy_admin:
             label: book.property.type
           - property: firstKeyword
             label: book.property.first_keyword
+            type: text
           - property: secondKeyword
             label: book.property.second_keyword
+            type: text
           - property: thirdKeyword
             label: book.property.third_keyword
+            type: text
           - property: fourthKeyword
             label: book.property.fourth_keyword
+            type: text
           - property: fifthKeyword
             label: book.property.fifth_keyword
+            type: text
           - property: sixthKeyword
             label: book.property.sixth_keyword
+            type: text
           - property: seventhKeyword
             label: book.property.seventh_keyword
+            type: text
           - property: eighthKeyword
             label: book.property.eighth_keyword
+            type: text
           - property: buyingYear
             label: book.property.buying_year
           - property: buyingPlace
