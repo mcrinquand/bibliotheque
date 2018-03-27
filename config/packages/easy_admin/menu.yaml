@@ -4,5 +4,8 @@ easy_admin:
       - entity: Book
         label: menu.book
         icon: book
+      - entity: Database
+        label: menu.database
+        icon: database
 
 

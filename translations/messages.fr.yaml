@@ -1,5 +1,6 @@
 menu:
   book: Livre
+  database: Base de données
 
 book:
   title:
@@ -49,3 +50,14 @@ book:
     first_publishing_house: Première maison d'édition
     comment: Commentaire
     database: Base de données
+
+database:
+  title:
+    list: Liste des bases de données
+    new: Créer une base de données
+    edit: Editer une base de données
+  property:
+    name: Nom
+
+Database: base de données
+Book: livre

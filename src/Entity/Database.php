@@ -35,42 +35,26 @@ class Database
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
 
     /**
-     * @param int $id
-     *
-     * @return $this
+     * @return string|null
      */
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
 
     /**
-     * @param string $name
-     *
-     * @return $this
+     * @param string|null $name
      */
-    public function setName($name)
+    public function setName(?string $name)
     {
         $this->name = $name;
-
-        return $this;
     }
 }

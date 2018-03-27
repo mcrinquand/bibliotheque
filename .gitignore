@@ -7,3 +7,8 @@
 ###< symfony/framework-bundle ###
 
 .led/
+!files_to_import/.gitkeep
+!files_to_encode/.gitkeep
+
+files_to_import
+files_to_encode

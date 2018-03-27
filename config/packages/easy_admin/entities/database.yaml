@@ -1,0 +1,21 @@
+easy_admin:
+  entities:
+    Database:
+      class: App\Entity\Database
+      templates:
+        edit: 'backend/database/edit.html.twig'
+      list:
+        title: database.title.list
+        sort: [name, ASC]
+        max_results: 100
+        fields:
+          - property: name
+            label: database.property.name
+      form:
+        fields:
+          - property: name
+            label: database.property.name
+      new:
+        title: database.title.new
+      edit:
+        title: database.title.edit

@@ -56,7 +56,7 @@ class ImportHistoryCommand extends Command
             ->setName('app:import-history')
             ->setDescription('Imports the book history from DVBiblio')
             ->addArgument('database', InputArgument::REQUIRED, 'The database id on which you want to import data')
-            ->addArgument('path', InputArgument::REQUIRED, 'The path to the file containing books data');
+            ->addArgument('file', InputArgument::REQUIRED, 'The name of the file containing books data');
     }
 
     /**
@@ -69,7 +69,7 @@ class ImportHistoryCommand extends Command
         try {
             $database = $this->manager->getRepository(Database::class)->getById((int)$input->getArgument('database'));
 
-            $file = fopen(sprintf('%s/%s', $this->rootDir, $input->getArgument('path')), 'r');
+            $file = fopen(sprintf('%s/file_to_import/%s', $this->rootDir, $input->getArgument('path')), 'r');
 
             while (($data = fgetcsv($file, 1000000, ";")) !== false) {
                 if (count($data) < 41) {

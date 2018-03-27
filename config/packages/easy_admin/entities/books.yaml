@@ -18,17 +18,8 @@ easy_admin:
           - property: publicationYear
             label: book.property.publication_year
             type: text
-      show:
-        title: book.title.show
-        fields:
-          - property: title
-            label: book.property.title
-          - property: subTitle
-            label: book.property.sub_title
-          - property: author
-            label: book.property.author
-          - property: publicationYear
-            label: book.property.publication_year
+          - property: database
+            label: book.property.database
       form:
         fields:
           - property: title
